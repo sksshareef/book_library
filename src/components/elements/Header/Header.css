@@ -1,0 +1,54 @@
+.bl-header {
+  width: 100%;
+  height: auto;
+  background: #d8d8d8;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #d2d2d2;
+}
+  
+  .bl-header-content {
+    max-width: 1280px;
+    min-height: 120px;
+    height: auto;
+    padding: 20px 0px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .bl-logo {
+    width: 300px;
+    margin-top: 20px;
+    /* float: left; */
+  }
+
+  .bl-search-holder {
+    width: 50%;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .bl-header-content {
+      max-width: 1280px;
+      min-height: 0px;
+      flex-direction: column;
+    }
+  
+    .bl-tmdb-logo {
+      display: inline-block;
+      width:80px;
+      margin-top: 0px;
+    }
+  
+    .bl-logo {
+      width: 150px;
+      margin-top: 5px;
+    }
+
+    .bl-search-holder {
+      width: 100%;
+    }
+  }
